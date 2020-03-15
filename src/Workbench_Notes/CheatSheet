@@ -22,3 +22,42 @@ VALUES ('4', 'Sophia', 'Nguyen', '0');
 
 UPDATE
 
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+examples:
+
+UPDATE `mybatis-test`.users
+SET first_name = #{first_name}, last_name = #{last_name}, isActive = #{isActive}
+where id = #{id}";
+
+UPDATE `mybatis-test`.task
+SET user_id = 4
+WHERE task_id = 2;
+
+
+-----------------------------------------------------------------------------------------------------
+
+DELETE (setting isactive to zero)
+
+examples:
+
+update `mybatis-test`.users
+SET isActive = 0
+where user_id = #{user_id};
+
+
+DELETE (whole row)
+
+DELETE FROM table_name
+WHERE condition;
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
