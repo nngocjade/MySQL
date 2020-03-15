@@ -1,0 +1,24 @@
+
+
+
+SQL Language
+
+
+CREATE SCHEMA `   `;
+
+----------------------------------------------------------------------------------------------------
+
+INSERT INTO
+
+INSERT INTO `schema_name`.`table_name`(`column_1`,`column_2`,`column_3`, etc...)
+VALUES (`column_1_value`, `   `, `   `, `    `, etc..);
+
+examples:
+
+INSERT INTO `mybatis-test`.`users` (`users_id`, `first_name`, `last_name`, `isActive`)
+VALUES ('4', 'Sophia', 'Nguyen', '0');
+
+----------------------------------------------------------------------------------------------------
+
+UPDATE
+

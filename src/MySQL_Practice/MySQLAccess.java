@@ -1,3 +1,5 @@
+package MySQL_Practice;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -23,7 +25,7 @@ public class MySQLAccess {
             Class.forName("com.mysql.jdbc.Driver");
             // Setup the connection with the DB
             connection = DriverManager.getConnection("jdbc:mysql://localhost/ChatApp?" +
-                    "&useSSL=false&allowPublicKeyRetrieval=true" +
+                    "user=root&password=lU9Qpl7cVvZO&useSSL=false&allowPublicKeyRetrieval=true" +
                     "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
             // Statements allow to issue SQL queries to the database
             statement = connection.createStatement();
@@ -201,7 +203,7 @@ class Message{
 
     @Override
     public String toString() {
-        return "Message{" +
+        return "MySQL_Practice.Message{" +
                 "id=" + id +
                 ", sender_id=" + sender_id +
                 ", recipient_id=" + recipient_id +
@@ -279,7 +281,7 @@ class User{
 
     @Override
     public String toString() {
-        return "User{" +
+        return "MySQL_Practice.User{" +
                 "id=" + id +
                 ", f_name='" + f_name + '\'' +
                 ", l_name='" + l_name + '\'' +
